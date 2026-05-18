@@ -73,6 +73,31 @@ export default function GallerySection() {
             </motion.div>
           ))}
         </div>
+
+        {/* Instagram CTA Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mt-16 md:mt-24 flex justify-center"
+        >
+          <a
+            href="https://instagram.com/naminails"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative overflow-hidden rounded-[10px] bg-[#4A3E31] text-[#F5F1E8] px-8 py-10 md:py-12 text-center max-w-lg w-full border border-[#D4C4A8]/20 transition-all duration-300 hover:shadow-2xl flex flex-col items-center gap-3"
+            style={{ fontFamily: "'Cormorant', serif" }}
+          >
+            <span className="text-[#9FA890] tracking-[0.2em] text-[0.8rem] uppercase font-bold">Social</span>
+            <p className="text-[1.8rem] md:text-[2.2rem] font-light leading-none tracking-wide italic">
+              "Follow us on Instagram"
+            </p>
+            <span className="text-[1.1rem] opacity-75 group-hover:opacity-100 transition-opacity duration-300 tracking-widest mt-2">
+              @naminails →
+            </span>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
