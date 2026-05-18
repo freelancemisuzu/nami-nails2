@@ -28,7 +28,6 @@ export default function Footer() {
             <h4 className="text-[1rem] mb-6 tracking-widest" style={{ fontFamily: "'Oswald', sans-serif" }}>{t('footer.social')}</h4>
             <div className="flex flex-col gap-4" style={{ fontFamily: "'Cormorant', serif" }}>
               <a href="#" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Instagram</a>
-              <a href="#" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Facebook</a>
               <a href="#" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Pinterest</a>
             </div>
           </div>
