@@ -135,6 +135,10 @@ const translations = {
         {
           q: "Is it possible to get gel nails if my nails are thin or weak?",
           a: "Yes! We specialize in natural nail health. Our nail care specialists will evaluate your nail condition and select a gentle base gel (such as non-sanding gel) that minimizes stress and helps protect and strengthen your nails."
+        },
+        {
+          q: "What is your cancellation policy?",
+          a: "We kindly ask that you notify us of any cancellations or changes at least 24 hours prior to your scheduled appointment. Cancellations made within 24 hours or no-shows may incur a cancellation fee. Thank you for your cooperation."
         }
       ]
     }
@@ -263,6 +267,10 @@ const translations = {
         {
           q: "爪が薄い・弱いのですが施術は可能ですか？",
           a: "はい、可能です！当サロンでは自爪を削らない爪に優しいジェル（ノンサンディングジェルなど）を導入し、健康状態に合わせた丁寧な施術を行います。お気軽にご相談ください。"
+        },
+        {
+          q: "キャンセルポリシーはありますか？",
+          a: "ご予約のキャンセルや日時変更は、前日の営業時間内までにご連絡をお願いいたします。当日キャンセルや無断キャンセルの場合、キャンセル料を頂戴する場合がございますので、予めご了承ください。"
         }
       ]
     }
