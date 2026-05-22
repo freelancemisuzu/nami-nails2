@@ -61,15 +61,15 @@ export default function LocationSection() {
               />
             </div>
 
-            {/* Get Directions button (Mobile only) */}
-            <div className="flex flex-col items-start gap-3 lg:hidden">
+            {/* Get Directions button */}
+            <div className="flex flex-col items-center gap-3 text-center mt-4">
               <motion.a
                 href={mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-block text-center px-10 py-3 bg-[#4A3E31] text-[#F5F1E8] border-2 border-[#4A3E31] hover:bg-transparent hover:text-[#4A3E31] transition-all duration-300 text-[1rem] tracking-wider w-full sm:w-auto"
+                className="inline-block text-center px-10 py-3 bg-transparent text-[#4A3E31] border-2 border-[#4A3E31] hover:bg-[#4A3E31] hover:text-[#F5F1E8] transition-all duration-300 text-[1rem] tracking-wider w-full sm:w-auto"
                 style={{ fontFamily: "'Cormorant', serif" }}
               >
                 {t('location.getDirections')}
@@ -196,26 +196,6 @@ export default function LocationSection() {
               </p>
             </div>
 
-            {/* Get Directions button (Desktop only) */}
-            <div className="pt-4 hidden lg:flex flex-col items-start gap-3">
-              <motion.a
-                href={mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-block text-center px-10 py-3 bg-[#4A3E31] text-[#F5F1E8] border-2 border-[#4A3E31] hover:bg-transparent hover:text-[#4A3E31] transition-all duration-300 text-[1rem] tracking-wider"
-                style={{ fontFamily: "'Cormorant', serif" }}
-              >
-                {t('location.getDirections')}
-              </motion.a>
-              <p
-                className="text-[#6B6762] text-[1.05rem] tracking-wide font-medium whitespace-pre-line"
-                style={{ fontFamily: "'Cormorant', serif" }}
-              >
-                {t('location.accessNote')}
-              </p>
-            </div>
           </motion.div>
         </div>
       </div>
