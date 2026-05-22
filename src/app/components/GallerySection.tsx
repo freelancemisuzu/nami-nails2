@@ -39,7 +39,7 @@ export default function GallerySection() {
             className="break-inside-avoid group"
           >
             <div 
-              className="relative overflow-hidden rounded-[10px] aspect-[4/5] bg-[#4A3E31] flex items-center justify-center p-4 sm:p-8 md:p-12 text-center"
+              className="relative overflow-hidden aspect-[4/5] bg-[#4A3E31] flex items-center justify-center p-4 sm:p-8 md:p-12 text-center"
               style={{ fontFamily: "'Cormorant', serif" }}
             >
               <p className="text-[#F5F1E8] text-[1rem] sm:text-[1.5rem] md:text-[2rem] leading-tight tracking-wide italic">
@@ -57,7 +57,7 @@ export default function GallerySection() {
               transition={{ delay: (index + 1) * 0.1 }}
               className="break-inside-avoid group"
             >
-              <div className="relative overflow-hidden rounded-[10px] cursor-pointer">
+              <div className="relative overflow-hidden cursor-pointer">
                 <motion.div
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.4 }}
@@ -86,7 +86,7 @@ export default function GallerySection() {
             href="https://instagram.com/naminails"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative overflow-hidden rounded-[10px] bg-[#4A3E31] text-[#F5F1E8] px-6 py-6 md:py-8 text-center max-w-[340px] w-full border border-[#D4C4A8]/20 transition-all duration-300 hover:shadow-2xl flex flex-col items-center gap-2"
+            className="group relative overflow-hidden bg-[#4A3E31] text-[#F5F1E8] px-6 py-6 md:py-8 text-center max-w-[340px] w-full border border-[#D4C4A8]/20 transition-all duration-300 hover:shadow-2xl flex flex-col items-center gap-2"
             style={{ fontFamily: "'Cormorant', serif" }}
           >
             <span className="text-[#9FA890] tracking-[0.2em] text-[0.75rem] uppercase font-bold">Social</span>

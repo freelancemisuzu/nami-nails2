@@ -80,7 +80,7 @@ export default function ServicesSection() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="relative overflow-hidden rounded-[12px] aspect-[4/5] mb-3 md:mb-6">
+              <div className="relative overflow-hidden aspect-[4/5] mb-3 md:mb-6">
                 <motion.div
                   animate={{
                     scale: hoveredIndex === index ? 1.05 : 1,

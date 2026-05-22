@@ -43,14 +43,14 @@ export default function AboutSection() {
             className="relative"
           >
             <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-[12px] overflow-hidden aspect-[3/4]">
+              <div className="overflow-hidden aspect-[3/4]">
                 <ImageWithFallback
                   src={dannyGreenbergImg}
                   alt="Our Salon Interior"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="rounded-[12px] overflow-hidden aspect-[3/4] mt-12">
+              <div className="overflow-hidden aspect-[3/4] mt-12">
                 <ImageWithFallback
                   src={alecPastelImg}
                   alt="Salon Details"
