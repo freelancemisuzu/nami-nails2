@@ -3,7 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 export default function Footer() {
   const { t } = useLanguage();
   return (
-    <footer className="bg-[#4A3E31] text-[#F5F1E8] pt-24 pb-12 px-6">
+    <footer className="bg-[#3A3026] text-[#F5F1E8] pt-24 pb-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="lg:col-span-2">

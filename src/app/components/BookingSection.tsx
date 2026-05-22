@@ -23,7 +23,7 @@ export default function BookingSection() {
         className="max-w-4xl mx-auto text-center relative z-10"
       >
         <h2
-          className="text-[3rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] mb-12 tracking-tight leading-none whitespace-pre-line font-medium text-[#2A2520]"
+          className="text-[3rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] mb-12 tracking-tight leading-none whitespace-pre-line font-medium text-[#3A3026]"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           {t('booking.title')}
@@ -34,7 +34,7 @@ export default function BookingSection() {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="inline-block px-8 sm:px-12 py-3 sm:py-4 bg-transparent text-[#4A3E31] border-2 border-[#4A3E31] hover:bg-[#4A3E31] hover:text-[#F5F1E8] transition-all duration-300 text-[1rem] sm:text-[1.25rem] tracking-wider text-center"
+          className="inline-block px-8 sm:px-12 py-3 sm:py-4 bg-transparent text-[#3A3026] border-2 border-[#3A3026] hover:bg-[#3A3026] hover:text-[#F5F1E8] transition-all duration-300 text-[1rem] sm:text-[1.25rem] tracking-wider text-center"
           style={{ fontFamily: "'Cormorant', serif" }}
         >
           {t('booking.button')}
