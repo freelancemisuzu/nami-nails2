@@ -21,38 +21,38 @@ const translations = {
       bookNow: "Book Now",
       list: [
         {
-          title: "one color",
-          description: "A luxurious hand treatment with organic products and precision shaping",
+          title: "One Color",
+          description: "* Choose 1 color from over 200 shades\n* Color blending available (+$500 per additional color)\n* Includes cuticle care",
           price: "¥6,500",
           duration: "60 min"
         },
         {
-          title: "French nail",
-          description: "A classic and sophisticated look with clean white tips",
-          price: "¥7,500",
-          duration: "75 min"
-        },
-        {
           title: "Gel Extensions",
-          description: "Natural-looking gel extensions crafted to perfection",
+          description: "* 10-finger nail extension course\n* Choose from simple elegant designs",
           price: "¥9,500",
           duration: "120 min"
         },
         {
-          title: "Natural Care",
-          description: "Nourishing treatment focused on nail health and restoration",
-          price: "¥5,500",
-          duration: "45 min"
-        },
-        {
-          title: "nail art",
-          description: "Bespoke designs tailored to your vision and aesthetic",
+          title: "Nail Art",
+          description: "* Custom design bring-ins welcome\n* Let our nail artist design a custom look\n* Large parts/charms incur additional fees",
           price: "¥8,500+",
           duration: "90+ min"
         },
         {
-          title: "foot gel",
-          description: "Durable and beautiful gel color for your toes, including foot bath and care",
+          title: "French Nail",
+          description: "* Choose up to 2 colors from over 100 shades\n* +¥500 per additional color\n* Includes cuticle care",
+          price: "¥7,500",
+          duration: "75 min"
+        },
+        {
+          title: "Removal",
+          description: "* Professional, gentle gel-off course that protects your natural nails\n* Acrylic/Sculpture removal: +¥1,000\n* Includes cuticle care",
+          price: "¥4,500",
+          duration: "45 min"
+        },
+        {
+          title: "Foot Gel",
+          description: "* Choose 1 color from over 200 shades\n* Color blending available (+$500 per additional color)\n* Includes cuticle care",
           price: "¥7,500",
           duration: "75 min"
         }
@@ -88,13 +88,15 @@ const translations = {
       phoneText: "(555) 123-4567",
       phoneLink: "tel:+15551234567",
       getDirections: "Get Directions →",
-      accessNote: "5 minutes walk from Tokyo Station A2 Exit",
+      accessNote: "5 minutes walk from Tokyo Station A2 Exit\n6 minutes walk from Otemachi Station B3 Exit",
       monFri: "Monday – Friday",
       monFriTime: "10:00 am – 7:00 pm",
       sat: "Saturday",
       satTime: "9:00 am – 6:00 pm",
       sun: "Sunday",
-      closed: "Closed"
+      closed: "Closed",
+      paymentMethodLabel: "Payment Method",
+      paymentMethodText: "Cash, Credit Card, QR Payments"
     },
     footer: {
       description: "A boutique sanctuary for conscious nail artistry and mindful care.",
@@ -153,49 +155,49 @@ const translations = {
       bookNow: "ご予約はこちら",
       list: [
         {
-          title: "one color",
-          description: "爪の形を整え、甘皮をケアするベーシックなコースです。清潔感のある指先に仕上げます。",
+          title: "One Color",
+          description: "＊200色以上のカラーから1色お選び頂けます\n＊カラー調合可能です、1色追加につき+500円になります\n＊甘皮ケア込みです",
           price: "¥6,500",
           duration: "60分"
         },
         {
-          title: "French nail",
-          description: "王道でありながら洗練された印象を与えるフレンチネイル。指先をより美しく、長く見せます。",
-          price: "¥7,500",
-          duration: "75分"
-        },
-        {
           title: "Gel Extensions",
-          description: "爪の長さを出し、強度を持たせるジェルエクステンション。自爪のような自然な仕上がりです。",
+          description: "＊10本長さだしのコースです\n＊シンプルなデザインの中からお選び頂けます",
           price: "¥9,500",
           duration: "120分"
         },
         {
-          title: "Natural Care",
-          description: "自爪の健康を第一に考えた、保湿と栄養補給に特化したトリートメントです。",
-          price: "¥5,500",
-          duration: "45分"
-        },
-        {
-          title: "nail art",
-          description: "お客様のご要望に合わせたデザインを施します。繊細なニュアンスアートや、あなただけのこだわりを形にします。",
+          title: "Nail Art",
+          description: "＊デザインお持ち込み可能です\n＊ネイリストにデザインお任せ可能です\n＊大きなパーツは追加で別途料金をいただいております",
           price: "¥8,500+",
           duration: "90分〜"
         },
         {
-          title: "foot gel",
-          description: "フットバスと甘皮ケアが含まれた、持ちが良く艶やかなフットジェル。足元から美しさを整えます。",
+          title: "French Nail",
+          description: "＊100色以上のカラーから2色までお選び頂けます\n＊カラー追加は1色+500円になります\n＊甘皮ケア込みです",
+          price: "¥7,500",
+          duration: "75分"
+        },
+        {
+          title: "Removal",
+          description: "＊自爪を傷つけない、プロによる丁寧なジェルオフのみのコースになります\n＊スカルプオフは+1000になります\n＊甘皮ケア込みです",
+          price: "¥4,500",
+          duration: "45分"
+        },
+        {
+          title: "Foot Gel",
+          description: "＊200色以上のカラーから1色お選び頂けます\n＊カラー調合可能です、1色追加につき+500円になります\n＊甘皮ケア込みです",
           price: "¥7,500",
           duration: "75分"
         }
       ],
-      notice: "※全てのメニューは税込表示となります。\n※全てのコースにジェルオフ・お爪のケア等も含まれております。\n※ ネイルオフがある際は、ご予約時に「オフあり」をご選択ください。"
+      notice: "※全てのメニューは税込表示となります。\n※全てのコースにジェルオフ・お爪のケア等も\n含まれております。\n※ ネイルオフがある際は、ご予約時に「オフあり」を\nご選択ください。"
     },
     about: {
       title: "Our Salon",
       p1: "「あなたの『好き』を、アートに宿して。」",
       p2: "決められたサンプルから選ぶだけでは物足りない。\n今の気分や、心惹かれる色、あなただけのこだわり。",
-      p3: "繊細なニュアンスと、今の空気感を纏ったデザインで、\n鏡を見るよりも、指先を見るのが楽しみになる毎日を。\nまるで一つの作品を身に纏うような、高揚感のある体験をご提案します"
+      p3: "お仕事や家事、どんなシーンでもあなたを輝かせるネイルを、プライベートな落ち着いた空間で丁寧に仕上げます。\n\nネイルを通して、毎日が少しでも明るく、ワクワクするものとなりますよう。お客様にお届けできれば幸いです。\n\nお飲み物をご用意しております、特別なひとときをお過ごしください。\n\n予約はオンラインとお電話から承っております。\n\nお気軽にお問い合わせください。"
     },
     booking: {
       title: "READY TO\nELEVATE?",
@@ -220,13 +222,15 @@ const translations = {
       phoneText: "03-5555-1234",
       phoneLink: "tel:+81355551234",
       getDirections: "ルート案内 →",
-      accessNote: "東京駅A2出口より徒歩５分",
+      accessNote: "東京駅A2出口より徒歩５分\n大手町駅B3出口より徒歩6分",
       monFri: "Monday – Friday",
       monFriTime: "10:00 am – 7:00 pm",
       sat: "Saturday",
       satTime: "9:00 am – 6:00 pm",
       sun: "Sunday",
-      closed: "Closed"
+      closed: "Closed",
+      paymentMethodLabel: "お支払い方法",
+      paymentMethodText: "現金・クレジットカード・QR決済"
     },
     footer: {
       description: "A boutique sanctuary for conscious nail artistry and mindful care.",

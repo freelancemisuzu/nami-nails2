@@ -40,24 +40,47 @@ export default function LocationSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          {/* ── Left: Map ── */}
+          {/* ── Left: Map & Get Directions (Mobile) ── */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="overflow-hidden shadow-xl border border-[#D4C4A8] h-[280px] sm:h-[360px] md:h-[460px]"
+            className="flex flex-col gap-6"
           >
-            <iframe
-              title="Nami Nails Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8706267773!2d139.7670513!3d35.6812362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1715000000000"
-              width="100%"
-              height="100%"
-              style={{ border: 0, filter: "grayscale(1) contrast(1.1) brightness(1.1)" }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <div className="overflow-hidden shadow-xl border border-[#D4C4A8] h-[280px] sm:h-[360px] md:h-[460px] w-full">
+              <iframe
+                title="Nami Nails Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8706267773!2d139.7670513!3d35.6812362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1715000000000"
+                width="100%"
+                height="100%"
+                style={{ border: 0, filter: "grayscale(1) contrast(1.1) brightness(1.1)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            {/* Get Directions button (Mobile only) */}
+            <div className="flex flex-col items-start gap-3 lg:hidden">
+              <motion.a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-block text-center px-10 py-3 bg-[#4A3E31] text-[#F5F1E8] border-2 border-[#4A3E31] hover:bg-transparent hover:text-[#4A3E31] transition-all duration-300 text-[1rem] tracking-wider w-full sm:w-auto"
+                style={{ fontFamily: "'Cormorant', serif" }}
+              >
+                {t('location.getDirections')}
+              </motion.a>
+              <p
+                className="text-[#6B6762] text-[1.05rem] tracking-wide font-medium whitespace-pre-line"
+                style={{ fontFamily: "'Cormorant', serif" }}
+              >
+                {t('location.accessNote')}
+              </p>
+            </div>
           </motion.div>
 
           {/* ── Right: Info ── */}
@@ -157,25 +180,41 @@ export default function LocationSection() {
               </div>
             </div>
 
-            {/* Get Directions button */}
-            <div className="pt-4 flex flex-col items-start gap-3">
-              <p
-                className="text-[#6B6762] text-[1.05rem] tracking-wide font-medium"
+            {/* Payment Method */}
+            <div className="pt-10 border-t border-[#D4C4A8]/40 space-y-6">
+              <h3
+                className="text-[0.85rem] tracking-[0.2em] uppercase text-[#6B6762] font-bold"
                 style={{ fontFamily: "'Cormorant', serif" }}
               >
-                {t('location.accessNote')}
+                {t('location.paymentMethodLabel')}
+              </h3>
+              <p
+                className="text-[#2A2520] leading-relaxed text-[1.1rem]"
+                style={{ fontFamily: "'Cormorant', serif" }}
+              >
+                {t('location.paymentMethodText')}
               </p>
+            </div>
+
+            {/* Get Directions button (Desktop only) */}
+            <div className="pt-4 hidden lg:flex flex-col items-start gap-3">
               <motion.a
                 href={mapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="inline-block text-center px-10 py-3 bg-[#2A2520] text-[#F5F1E8] border-2 border-[#2A2520] hover:bg-transparent hover:text-[#2A2520] transition-all duration-300 text-[1rem] tracking-wider"
+                className="inline-block text-center px-10 py-3 bg-[#4A3E31] text-[#F5F1E8] border-2 border-[#4A3E31] hover:bg-transparent hover:text-[#4A3E31] transition-all duration-300 text-[1rem] tracking-wider"
                 style={{ fontFamily: "'Cormorant', serif" }}
               >
                 {t('location.getDirections')}
               </motion.a>
+              <p
+                className="text-[#6B6762] text-[1.05rem] tracking-wide font-medium whitespace-pre-line"
+                style={{ fontFamily: "'Cormorant', serif" }}
+              >
+                {t('location.accessNote')}
+              </p>
             </div>
           </motion.div>
         </div>

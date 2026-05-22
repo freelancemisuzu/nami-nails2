@@ -8,6 +8,7 @@ import frenchNailImg from "../../assets/pexels-pexels-user-101154924-9393757.jpg
 import gelExtensionImg from "../../assets/rayana-sales-3EqQIavMRnE-unsplash.jpg";
 import naturalCareImg from "../../assets/natural_care.jpg";
 import footGelImg from "../../assets/foot_gel_v2.jpg";
+import basicNailsImg from "../../assets/basic_nails.jpg";
 
 const renderWithNumberFont = (text: string) => {
   const parts = text.split(/(\d[\d,.]*)/g);
@@ -34,19 +35,19 @@ export default function ServicesSection() {
     },
     {
       ...t('services.list')[1],
-      image: frenchNailImg,
-    },
-    {
-      ...t('services.list')[2],
       image: gelExtensionImg,
     },
     {
+      ...t('services.list')[2],
+      image: nailArtImg,
+    },
+    {
       ...t('services.list')[3],
-      image: naturalCareImg,
+      image: frenchNailImg,
     },
     {
       ...t('services.list')[4],
-      image: nailArtImg,
+      image: naturalCareImg,
     },
     {
       ...t('services.list')[5],
@@ -123,10 +124,10 @@ export default function ServicesSection() {
                   </div>
                 </div>
                 <p
-                  className="text-[#6B6762] tracking-wide text-[0.75rem] sm:text-[0.875rem] md:text-[0.95rem] leading-relaxed"
+                  className="text-[#6B6762] tracking-wide text-[0.75rem] sm:text-[0.875rem] md:text-[0.95rem] leading-relaxed whitespace-pre-line"
                   style={{ fontFamily: "'Cormorant', serif", letterSpacing: "0.05em" }}
                 >
-                  {service.description}
+                  {renderWithNumberFont(service.description)}
                 </p>
               </div>
             </motion.div>
@@ -151,7 +152,7 @@ export default function ServicesSection() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="inline-block px-10 py-3 bg-transparent border-2 border-[#2A2520] text-[#2A2520] hover:bg-[#2A2520] hover:text-[#F5F1E8] transition-all duration-300 text-[1.1rem] tracking-wider font-medium text-center"
+            className="inline-block px-10 py-3 bg-transparent border-2 border-[#4A3E31] text-[#4A3E31] hover:bg-[#4A3E31] hover:text-[#F5F1E8] transition-all duration-300 text-[1.1rem] tracking-wider font-medium text-center"
             style={{ fontFamily: "'Cormorant', serif" }}
           >
             {t('services.bookNow')}

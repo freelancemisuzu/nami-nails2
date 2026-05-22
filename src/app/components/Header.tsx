@@ -75,7 +75,7 @@ export default function Header() {
               href="https://beauty.hotpepper.jp/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="hidden md:block px-6 py-2 bg-transparent border border-[#2A2520] text-[#2A2520] hover:bg-[#2A2520] hover:text-[#F5F1E8] transition-all duration-300 text-center text-[0.8rem] font-semibold tracking-widest uppercase" 
+              className="hidden md:block px-6 py-2 bg-transparent border border-[#4A3E31] text-[#4A3E31] hover:bg-[#4A3E31] hover:text-[#F5F1E8] transition-all duration-300 text-center text-[0.8rem] font-semibold tracking-widest uppercase" 
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               {t('header.bookNow')}
@@ -166,7 +166,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={closeMenu}
-                className="px-8 py-3 mt-4 bg-transparent border-2 border-[#2A2520] text-[#2A2520] hover:bg-[#2A2520] hover:text-[#F5F1E8] transition-all duration-300 text-[1.1rem] text-center tracking-widest uppercase font-semibold"
+                className="px-8 py-3 mt-4 bg-transparent border-2 border-[#4A3E31] text-[#4A3E31] hover:bg-[#4A3E31] hover:text-[#F5F1E8] transition-all duration-300 text-[1.1rem] text-center tracking-widest uppercase font-semibold"
                 style={{ fontFamily: "'Inter', sans-serif" }}
               >
                 {t('header.bookNow')}
