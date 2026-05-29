@@ -107,8 +107,8 @@ export default function ServicesSection() {
                 <div className="flex flex-col gap-1">
                   <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-4">
                     <h3
-                      className="text-[1rem] sm:text-[1.5rem] md:text-[1.75rem] tracking-tight leading-tight"
-                      style={{ fontFamily: "'Oswald', sans-serif" }}
+                      className="text-[1.2rem] sm:text-[1.6rem] md:text-[1.85rem] tracking-tight leading-tight font-medium"
+                      style={{ fontFamily: "'Cormorant Garamond', serif" }}
                     >
                       {service.title}
                     </h3>

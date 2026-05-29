@@ -33,9 +33,10 @@ export default function GallerySection() {
         <div className="columns-2 lg:columns-3 gap-8 md:gap-12 lg:gap-16 space-y-8 md:space-y-12 lg:space-y-16">
           {/* Text Card */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0 }}
             className="break-inside-avoid group"
           >
             <div 
@@ -48,30 +49,37 @@ export default function GallerySection() {
             </div>
           </motion.div>
 
-          {galleryImages.map((image, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: (index + 1) * 0.1 }}
-              className="break-inside-avoid group"
-            >
-              <div className="relative overflow-hidden cursor-pointer">
-                <motion.div
-                  whileHover={{ scale: 1.03 }}
-                  transition={{ duration: 0.4 }}
-                >
-                  <ImageWithFallback
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-auto"
-                  />
-                </motion.div>
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2A2520]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            </motion.div>
-          ))}
+          {galleryImages.map((image, index) => {
+            const realIndex = index + 1;
+            const row = realIndex % 3;
+            const col = Math.floor(realIndex / 3);
+            const visualIndex = row * 3 + col;
+            
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: visualIndex * 0.1 }}
+                className="break-inside-avoid group"
+              >
+                <div className="relative overflow-hidden cursor-pointer">
+                  <motion.div
+                    whileHover={{ scale: 1.03 }}
+                    transition={{ duration: 0.4 }}
+                  >
+                    <ImageWithFallback
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-auto"
+                    />
+                  </motion.div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#2A2520]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
 
         {/* Instagram CTA Card */}
