@@ -24,7 +24,7 @@ export default function BookingSection() {
       >
         <h2
           className="text-[3rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[5.5rem] mb-12 tracking-tight leading-none whitespace-pre-line font-medium text-[#3A3026]"
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {t('booking.title')}
         </h2>

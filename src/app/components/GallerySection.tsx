@@ -12,14 +12,14 @@ import gallery7 from "../../assets/gallery_img7.jpg";
 import gallery8 from "../../assets/gallery_img8.jpg";
 
 const galleryImages = [
-  { src: gallery1, alt: "Nami Nails Art 1" },
-  { src: gallery2, alt: "Nami Nails Art 2" },
-  { src: gallery3, alt: "Nami Nails Art 3" },
-  { src: gallery4, alt: "Nami Nails Art 4" },
-  { src: gallery5, alt: "Nami Nails Art 5" },
-  { src: gallery6, alt: "Nami Nails Art 6" },
-  { src: gallery7, alt: "Nami Nails Art 7" },
-  { src: gallery8, alt: "Nami Nails Art 8" }
+  { src: gallery1, alt: "Noe Nails Art 1" },
+  { src: gallery2, alt: "Noe Nails Art 2" },
+  { src: gallery3, alt: "Noe Nails Art 3" },
+  { src: gallery4, alt: "Noe Nails Art 4" },
+  { src: gallery5, alt: "Noe Nails Art 5" },
+  { src: gallery6, alt: "Noe Nails Art 6" },
+  { src: gallery7, alt: "Noe Nails Art 7" },
+  { src: gallery8, alt: "Noe Nails Art 8" }
 ];
 
 export default function GallerySection() {

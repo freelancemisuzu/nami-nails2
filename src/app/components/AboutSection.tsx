@@ -18,7 +18,7 @@ export default function AboutSection() {
           >
             <h2
               className="text-[2.0rem] sm:text-[2.8rem] md:text-[3.8rem] mb-6 tracking-tight font-medium text-[#2A2520] whitespace-pre-line"
-              style={{ fontFamily: "'Playfair Display', serif" }}
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
             >
               {t('about.title')}
             </h2>

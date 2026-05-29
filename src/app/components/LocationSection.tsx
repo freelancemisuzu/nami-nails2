@@ -33,7 +33,7 @@ export default function LocationSection() {
           </p>
           <h2
             className="text-[2.2rem] sm:text-[3.2rem] md:text-[4.2rem] tracking-tight leading-none text-[#2A2520] font-medium"
-            style={{ fontFamily: "'Playfair Display', serif" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             {t('location.heading')}
           </h2>
@@ -50,7 +50,7 @@ export default function LocationSection() {
           >
             <div className="overflow-hidden shadow-xl border border-[#D4C4A8] h-[280px] sm:h-[360px] md:h-[460px] w-full">
               <iframe
-                title="Nami Nails Location"
+                title="Noe Nails Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8706267773!2d139.7670513!3d35.6812362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2sTokyo%20Station!5e0!3m2!1sen!2sjp!4v1715000000000"
                 width="100%"
                 height="100%"

@@ -7,16 +7,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div className="lg:col-span-2">
-            <h2 className="text-[2.5rem] mb-6 tracking-tight" style={{ fontFamily: "'Playfair Display', serif" }}>NAMI NAILS</h2>
+            <h2 className="text-[2.5rem] mb-6 tracking-tight" style={{ fontFamily: "'Cormorant Garamond', serif" }}>Noe Nails</h2>
             <p className="max-w-md text-[#F5F1E8]/60 text-[1rem] leading-relaxed" style={{ fontFamily: "'Cormorant', serif" }}>
               {t('footer.description')}
             </p>
           </div>
 
           <div>
-            <h4 className="text-[1rem] mb-6 tracking-widest" style={{ fontFamily: "'Playfair Display', serif" }}>{t('footer.links')}</h4>
+            <h4 className="text-[1rem] mb-6 tracking-widest" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{t('footer.links')}</h4>
             <nav className="flex flex-col gap-4" style={{ fontFamily: "'Cormorant', serif" }}>
-              <a href="#services" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Services</a>
+              <a href="#services" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Price List</a>
               <a href="#about" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">About</a>
               <a href="#gallery" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Gallery</a>
               <a href="#location" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Location</a>
@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[1rem] mb-6 tracking-widest" style={{ fontFamily: "'Playfair Display', serif" }}>{t('footer.social')}</h4>
+            <h4 className="text-[1rem] mb-6 tracking-widest" style={{ fontFamily: "'Cormorant Garamond', serif" }}>{t('footer.social')}</h4>
             <div className="flex flex-col gap-4" style={{ fontFamily: "'Cormorant', serif" }}>
               <a href="#" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Instagram</a>
               <a href="#" className="text-[#F5F1E8]/60 hover:text-[#F5F1E8] transition-colors">Pinterest</a>

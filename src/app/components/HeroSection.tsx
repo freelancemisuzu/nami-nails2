@@ -39,7 +39,7 @@ export default function HeroSection() {
         >
           <h1
             className="text-[2rem] min-[400px]:text-[2.4rem] sm:text-[4.2rem] md:text-[5.8rem] lg:text-[7.2rem] xl:text-[8.5rem] tracking-tight mb-4 whitespace-nowrap font-medium text-[#2A2520]"
-            style={{ fontFamily: "'Playfair Display', serif", lineHeight: "1.0" }}
+            style={{ fontFamily: "'Cormorant Garamond', serif", lineHeight: "1.0" }}
           >
             {t('hero.title')}
           </h1>

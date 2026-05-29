@@ -63,7 +63,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-[2.2rem] sm:text-[3.2rem] md:text-[4.5rem] mb-12 tracking-tight font-medium text-[#2A2520]"
-          style={{ fontFamily: "'Playfair Display', serif" }}
+          style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           {t('services.heading')}
         </motion.h2>

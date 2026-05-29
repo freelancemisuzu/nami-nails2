@@ -29,13 +29,13 @@ export default function Header() {
         transition={{ duration: 0.6 }}
       >
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div style={{ fontFamily: "'Playfair Display', serif" }} className="tracking-wide">
-            <span className="text-[1.5rem] md:text-[2.2rem] text-[#2A2520] font-medium">NAMI NAILS</span>
+          <div style={{ fontFamily: "'Cormorant Garamond', serif" }} className="tracking-wide">
+            <span className="text-[1.5rem] md:text-[2.2rem] text-[#2A2520] font-medium">Noe Nails</span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8 text-[0.8rem] font-semibold tracking-widest uppercase" style={{ fontFamily: "'Inter', sans-serif" }}>
             <a href="#services" className="text-[#2A2520] hover:text-[#9FA890] transition-colors">
-              Services
+              Price List
             </a>
             <a href="#about" className="text-[#2A2520] hover:text-[#9FA890] transition-colors">
               About
@@ -122,7 +122,7 @@ export default function Header() {
                 onClick={closeMenu}
                 className="text-[#2A2520] hover:text-[#9FA890] transition-colors"
               >
-                Services
+                Price List
               </a>
               <a
                 href="#about"

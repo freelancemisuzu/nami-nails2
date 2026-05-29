@@ -13,11 +13,11 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   en: {
     hero: {
-      title: "NAMI NAILS",
+      title: "Noe Nails",
       subtitle: "Elevated care for hands that tell your story",
     },
     services: {
-      heading: "SERVICES",
+      heading: "Price List",
       bookNow: "Book Now",
       list: [
         {
@@ -39,7 +39,7 @@ const translations = {
           duration: "90+ min"
         },
         {
-          title: "French Nail",
+          title: "French Nail / Gradient nails",
           description: "* Choose up to 2 colors from over 100 shades\n* +¥500 per additional color\n* Includes cuticle care",
           price: "¥7,500",
           duration: "75 min"
@@ -61,16 +61,16 @@ const translations = {
     },
     about: {
       title: "WHERE CRAFT\nMEETS CARE",
-      p1: "At Nami Nails, we believe in the ritual of self-care. Each service is a moment of intentional beauty, where expert technique meets organic luxury.",
+      p1: "At Noe Nails, we believe in the ritual of self-care. Each service is a moment of intentional beauty, where expert technique meets organic luxury.",
       p2: "Our approach is rooted in the philosophy that your nails deserve the same elevated attention as any wellness practice. We use only premium, sustainable products that nourish as they beautify.",
-      p3: "Founded on principles of mindful beauty, Nami Nails offers a sanctuary where time slows down and every detail is considered."
+      p3: "Founded on principles of mindful beauty, Noe Nails offers a sanctuary where time slows down and every detail is considered."
     },
     booking: {
       title: "READY TO\nELEVATE?",
       subtitle: "Reserve your sanctuary moment",
       button: "Book Your Appointment",
       hours: "HOURS",
-      location: "LOCATION",
+      location: "Location",
       contact: "CONTACT",
       address: "123 Organic Lane\nDowntown District\nCA 90210",
       monFri: "Mon–Fri: 10am–7pm",
@@ -80,7 +80,7 @@ const translations = {
     },
     location: {
       findUs: "Find Us",
-      heading: "LOCATION",
+      heading: "Location",
       addressLabel: "Address",
       addressText: "123 Organic Lane, Downtown District\nTokyo, Japan 100-0005",
       hoursLabel: "Opening Hours",
@@ -102,7 +102,7 @@ const translations = {
       description: "A boutique sanctuary for conscious nail artistry and mindful care.",
       links: "QUICK LINKS",
       social: "FOLLOW US",
-      rights: "© 2024 NAMI NAILS. ALL RIGHTS RESERVED."
+      rights: "© 2024 Noe Nails. ALL RIGHTS RESERVED."
     },
     header: {
       services: "Services",
@@ -147,11 +147,11 @@ const translations = {
   },
   jp: {
     hero: {
-      title: "NAMI NAILS",
+      title: "Noe Nails",
       subtitle: "Elevated care for hands that tell your story",
     },
     services: {
-      heading: "SERVICES",
+      heading: "Price List",
       bookNow: "ご予約はこちら",
       list: [
         {
@@ -173,7 +173,7 @@ const translations = {
           duration: "90分〜"
         },
         {
-          title: "French Nail",
+          title: "French Nail / Gradient nails",
           description: "＊100色以上のカラーから2色までお選び頂けます\n＊カラー追加は1色+500円になります\n＊甘皮ケア込みです",
           price: "¥7,500",
           duration: "75分"
@@ -214,7 +214,7 @@ const translations = {
     },
     location: {
       findUs: "アクセス",
-      heading: "LOCATION",
+      heading: "Location",
       addressLabel: "住所",
       addressText: "東京都千代田区丸の内1-1-1\n123 オーガニック・レーン",
       hoursLabel: "営業時間",
@@ -236,7 +236,7 @@ const translations = {
       description: "A boutique sanctuary for conscious nail artistry and mindful care.",
       links: "QUICK LINKS",
       social: "FOLLOW US",
-      rights: "© 2024 NAMI NAILS. ALL RIGHTS RESERVED."
+      rights: "© 2024 Noe Nails. ALL RIGHTS RESERVED."
     },
     header: {
       services: "Services",
